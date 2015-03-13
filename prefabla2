@@ -4,7 +4,15 @@ from mididings import *
 
 
 config(
-    client_name = 'test',
+    backend='jack-rt',
+    client_name = 'To Fabla',
     in_ports = 1
-    out_ports = 4,
+    out_ports = ['KICKS', 'SNARES', 'HATS,' 'FX'],
 )
+
+kicks_out   = Output('KICKS', 1)
+snares_out  = Output('SNARE', 1)
+hats_out    = Output('HATS', 1)
+fx_out      = Output('FX', 1)
+
+run(DERRRRRRRRPPpppp)
