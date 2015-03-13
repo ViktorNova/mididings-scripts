@@ -1,0 +1,10 @@
+#!/usr/bin/python2
+from mididings import *
+
+
+
+config(
+    client_name = 'test',
+    in_ports = 1
+    out_ports = 4,
+)
